@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Welcome to E-Commerce App</h1>
+<h1>Welcome to E-Commerce </h1>
 </body>
 </html>
