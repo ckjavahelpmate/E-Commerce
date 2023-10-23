@@ -6,6 +6,10 @@
 <meta charset="UTF-8">
 <title>Shopping cart login</title>
 <%@include file="includes/head.jsp"%>
+<%
+session.removeAttribute("auth");
+%>
+<%@include file="includes/nav.jsp"%>
 </head>
 <body>
 
@@ -13,19 +17,18 @@
 		<div class="card w-50 mx-auto my-5">
 			<div class="card-header text-center">User Login</div>
 			<div class="card-body">
-				<form action="" method="post">
+				<form action="userLogin" method="post">
 					<div class="form-group">
 						<label>Email Address</label> <input type="email"
-							class="form-group" name="login-email"
+							class="form-group" name="loginEmail"
 							placeholder="Enter Your Email" required="required">
 					</div>
 					<div class="form-group">
-						<label>Password</label> <input type="password"
-							class="form-group" name="login-password"
-							placeholder="**********" required="required">
+						<label>Password</label> <input type="password" class="form-group"
+							name="loginPassword" placeholder="**********" required="required">
 					</div>
 					<div class="form-group">
-					<button type="submit" class="btn btn-primary">Login</button>
+						<button type="submit" class="btn btn-primary">Login</button>
 					</div>
 				</form>
 			</div>

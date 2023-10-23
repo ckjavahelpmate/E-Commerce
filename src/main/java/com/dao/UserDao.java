@@ -22,7 +22,7 @@ public class UserDao {
 		User user = null ;
 		try 
 		{
-			query = "SELECT * From user where email=? password=?" ;
+			query = "SELECT * From user where email=? && password=?" ;
 			
 			preparedStatement = connection.prepareStatement(query);
 			preparedStatement.setString(1, email);
