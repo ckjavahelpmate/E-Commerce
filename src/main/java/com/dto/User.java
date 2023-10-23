@@ -1,4 +1,4 @@
-package com.dto;
+package src.main.java.com.dto;
 
 public class User {
 	private int id;
@@ -6,7 +6,9 @@ public class User {
 	private String email;
 	private String password;
 
-	public User() {}
+	public User() {
+		
+	}
 	public User(int id, String name, String email, String password) {
 		super();
 		this.id = id;
